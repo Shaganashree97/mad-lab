@@ -1,0 +1,59 @@
+Android Studio Setup Process
+
+Download & Install Android Studio
+
+Download from: https://developer.android.com/studio
+
+Install and open Android Studio
+
+Configure Android Studio
+
+Open Tools > SDK Manager
+
+Install latest Android SDK Platform (Recommended: API 21 or higher)
+
+Install required SDK Tools:
+
+Android SDK Build-Tools
+
+Android Emulator
+
+Android SDK Platform-Tools
+
+Android SDK Tools
+
+Create a New Project
+
+Click New Project
+
+Select Empty Activity
+
+Set:
+
+Name: Your project name
+
+Package Name: com.shagana.[yourprojectname]
+
+Language: Java
+
+Minimum SDK: API 21 (Lollipop) or higher
+
+Click Finish
+
+Setup Emulator
+
+Open Tools > AVD Manager
+
+Create Virtual Device > Select device model
+
+Choose a System Image (Recommended: with Google APIs)
+
+Click Finish
+
+Run Your First App
+
+Click Run ▶ and choose emulator/device
+
+Ensure Gradle sync is successful
+
+Now your Android Studio is ready for development!
