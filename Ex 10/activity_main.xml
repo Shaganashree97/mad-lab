@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title TextView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Details"
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <!-- Roll Number EditText -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Roll Number"
+        android:id="@+id/et1"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/tv1"/>
+
+    <!-- Name EditText -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:id="@+id/et2"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/et1"/>
+
+    <!-- Department EditText -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Department"
+        android:id="@+id/et3"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/et2"/>
+
+    <!-- Insert Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:onClick="onInsert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Insert"
+        android:layout_below="@id/et3"/>
+
+    <!-- Update Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2"
+        android:onClick="onUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Update"
+        android:layout_below="@id/b1"/>
+
+    <!-- Read Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b3"
+        android:onClick="onRead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Read"
+        android:layout_below="@id/b2"/>
+
+    <!-- Delete Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b4"
+        android:onClick="onDelete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Delete"
+        android:layout_below="@id/b3"/>
+
+    <!-- ScrollView to display the Table -->
+    <ScrollView
+        android:id="@+id/dataScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b4"
+        android:layout_marginTop="30dp"
+        android:visibility="gone">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:padding="10dp">
+            <!-- Table header will be dynamically created -->
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
